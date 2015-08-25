@@ -2,9 +2,7 @@
   "name": "seiyria-bootstrap-slider",
   "version": "3.1.0",
   "dependencies": {
-    "jquery": "",
-    "bootstrap": "",
-    "modernizr": ""
+    "jquery": ""
   },
   "homepage": "https://github.com/seiyria/bootstrap-slider",
   "authors": [

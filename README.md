@@ -1,18 +1,19 @@
-bootstrap-slider [![Build Status](https://travis-ci.org/MartijnR/bootstrap-slider.png?branch=master)](https://travis-ci.org/MartijnR/bootstrap-slider)
+bootstrap-slider [![Build Status](https://travis-ci.org/enketo/bootstrap-slider.png?branch=master)](https://travis-ci.org/enketo/bootstrap-slider)
 ================
 A simplified "fork" of seiyria's excellent fork of bootstrap-slider found on http://www.eyecon.ro/ originally by Stefan Petre.
 
 Installation
 ============
-Clone the repository, then run `npm install`
+* `npm install bootstrap-slider-basic`
+* include sass file in your stylesheet build system
 
 See [seiyria's fork](http://github.com/seiyria/bootstrap-slider/) for documentation.
 
 Changes for use in [Enketo-core](https://github.com/MartijnR/enketo-core)
 ===========
-- Made AMD-Compliant
+- Made AMD-Compliant and CommonJS-compliant
 - Changed LESS to SCSS
-- Disabled the tooltip functionality (I don't need it)
+- Removed the tooltip functionality
 - Leave orginal input element intact and inject slider after this input element
-_ Added widget clas
+- Added widget clas
 - Updated tests

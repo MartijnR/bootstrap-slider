@@ -1,14 +1,10 @@
 /** Customized for Enketo:
- *  - wrapped anonymous function inside an AMD wrapper and removed the (window.jQuery) all the way at the bottom
+ *  - wrapped anonymous function inside an AMD/CommonJS wrapper and removed the (window.jQuery) all the way at the bottom
  *  - removed tooltip html
  *  - keep original input element intact instead of moving it inside the slider div
  */
 
-
-/* =========================================================
- * bootstrap-slider.js v3.0.0
- * =========================================================
- *
+/* 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -23,14 +19,14 @@
  * ========================================================= */
 
 ( function( factory ) {
-    if ( typeof define === 'function' && define.amd && define.amd.jQuery ) {
-        // AMD. Register as anonymous module.
-        define( [ 'jquery' ], factory );
+    if ( typeof define === "function" && define.amd ) {
+        define( [ "jquery" ], factory );
+    } else if ( typeof exports === 'object' ) {
+        factory( require( 'jquery' ) );
     } else {
-        // Browser globals.
         factory( jQuery );
     }
-}( function( $ ) {
+}( function( $, undefined ) {
 
     var ErrorMsgs = {
         formatInvalidInputErrorMsg: function( input ) {
