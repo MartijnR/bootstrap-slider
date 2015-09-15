@@ -1,10 +1,9 @@
 {
     "name": "bootstrap-slider-basic",
-    "version": "3.0.2",
+    "version": "3.2.0",
     "description": "Simplified fork of http://github.com/seiyria/bootstrap-slider/.",
     "main": "js/bootstrap-slider.js",
     "scripts": {
-        "install": "bower install",
         "test": "grunt test"
     },
     "repository": {
@@ -17,8 +16,8 @@
         "jquery": "2.1.x"
     },
     "devDependencies": {
-        "grunt": "~0.4.1",
-        "grunt-contrib-jshint": "~0.6.4",
+        "grunt": "0.4.x",
+        "grunt-contrib-jshint": "0.11.x",
         "bower": "latest",
         "grunt-contrib-jasmine": "~0.5.2"
     },
