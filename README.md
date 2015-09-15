@@ -9,6 +9,11 @@ A simplified "fork" of seiyria's excellent fork of bootstrap-slider found on htt
 
 See [seiyria's fork](http://github.com/seiyria/bootstrap-slider/) for documentation.
 
+#### Test
+
+* install bower
+* run `npm test`
+
 #### Changes:
 
 - Made AMD-Compliant and CommonJS-compliant
